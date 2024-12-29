@@ -1,0 +1,535 @@
+{
+  "pokemon": [
+    {
+      "id": 2,
+      "name": "Ivysaur",
+      "type": [
+        "Planta",
+        "Veneno"
+      ],
+      "weight": 13,
+      "height": 1,
+      "abilities": [
+        "Espesura",
+        "Clorofila"
+      ],
+      "description": "El bulbo en su espalda crece absorbiendo nutrientes. Emite un dulce aroma cuando está a punto de florecer."
+    },
+    {
+      "id": 3,
+      "name": "Venusaur",
+      "type": [
+        "Planta",
+        "Veneno"
+      ],
+      "weight": 100,
+      "height": 2,
+      "abilities": [
+        "Espesura",
+        "Clorofila"
+      ],
+      "description": "Su flor emite un aroma relajante que calma los ánimos de combate."
+    },
+    {
+      "id": 4,
+      "name": "Charmander",
+      "type": [
+        "Fuego"
+      ],
+      "weight": 8.5,
+      "height": 0.6,
+      "abilities": [
+        "Mar Llamas",
+        "Poder Solar"
+      ],
+      "description": "La llama en la punta de su cola indica su estado emocional y vital."
+    },
+    {
+      "id": 5,
+      "name": "Charmeleon",
+      "type": [
+        "Fuego"
+      ],
+      "weight": 19,
+      "height": 1.1,
+      "abilities": [
+        "Mar Llamas",
+        "Poder Solar"
+      ],
+      "description": "Cuando balancea su ardiente cola, eleva la temperatura a niveles increíbles."
+    },
+    {
+      "id": 6,
+      "name": "Charizard",
+      "type": [
+        "Fuego",
+        "Volador"
+      ],
+      "weight": 90.5,
+      "height": 1.7,
+      "abilities": [
+        "Mar Llamas",
+        "Poder Solar"
+      ],
+      "description": "Escupe fuego tan caliente que funde las rocas. Causa incendios forestales sin querer."
+    },
+    {
+      "id": 7,
+      "name": "Squirtle",
+      "type": [
+        "Agua"
+      ],
+      "weight": 9,
+      "height": 0.5,
+      "abilities": [
+        "Torrente",
+        "Caparazón"
+      ],
+      "description": "Cuando retrae su largo cuello en el caparazón, dispara agua con vigor."
+    },
+    {
+      "id": 8,
+      "name": "Wartortle",
+      "type": [
+        "Agua"
+      ],
+      "weight": 22.5,
+      "height": 1,
+      "abilities": [
+        "Torrente",
+        "Caparazón"
+      ],
+      "description": "Su cola peluda y larga es símbolo de longevidad. Se lo considera un Pokémon de buena suerte."
+    },
+    {
+      "id": 9,
+      "name": "Blastoise",
+      "type": [
+        "Agua"
+      ],
+      "weight": 85.5,
+      "height": 1.6,
+      "abilities": [
+        "Torrente",
+        "Caparazón"
+      ],
+      "description": "Los chorros de agua que dispara por los cañones de su caparazón pueden atravesar el acero."
+    },
+    {
+      "id": 10,
+      "name": "Caterpie",
+      "type": [
+        "Bicho"
+      ],
+      "weight": 2.9,
+      "height": 0.3,
+      "abilities": [
+        "Polvo Escudo",
+        "Fuga"
+      ],
+      "description": "Sus patas tienen ventosas que le permiten trepar incansablemente por muros y pendientes."
+    },
+    {
+      "id": 11,
+      "name": "Metapod",
+      "type": [
+        "Bicho"
+      ],
+      "weight": 9.9,
+      "height": 0.7,
+      "abilities": [
+        "Mudar",
+        "Caparazón"
+      ],
+      "description": "Ha encubierto su cuerpo con un duro caparazón. Permanece inmóvil mientras se prepara para evolucionar."
+    },
+    {
+      "id": 12,
+      "name": "Butterfree",
+      "type": [
+        "Bicho",
+        "Volador"
+      ],
+      "weight": 32,
+      "height": 1.1,
+      "abilities": [
+        "Ojo Compuesto",
+        "Recolector"
+      ],
+      "description": "En batalla, aletea a gran velocidad para lanzar al aire sus escamas tóxicas."
+    },
+    {
+      "id": 13,
+      "name": "Weedle",
+      "type": [
+        "Bicho",
+        "Veneno"
+      ],
+      "weight": 3.2,
+      "height": 0.3,
+      "abilities": [
+        "Polvo Escudo",
+        "Fuga"
+      ],
+      "description": "El aguijón de su cabeza es muy venenoso. Su cuerpo está cubierto de pelos cortos y afilados."
+    },
+    {
+      "id": 14,
+      "name": "Kakuna",
+      "type": [
+        "Bicho",
+        "Veneno"
+      ],
+      "weight": 10,
+      "height": 0.6,
+      "abilities": [
+        "Mudar",
+        "Caparazón"
+      ],
+      "description": "Casi incapaz de moverse, este Pokémon solo puede endurecer su caparazón para protegerse."
+    },
+    {
+      "id": 15,
+      "name": "Beedrill",
+      "type": [
+        "Bicho",
+        "Veneno"
+      ],
+      "weight": 29.5,
+      "height": 1,
+      "abilities": [
+        "Enjambre",
+        "Francotirador"
+      ],
+      "description": "Vuela a gran velocidad y ataca usando los venenosos aguijones de sus patas y cola."
+    },
+    {
+      "id": 16,
+      "name": "Pidgey",
+      "type": [
+        "Normal",
+        "Volador"
+      ],
+      "weight": 1.8,
+      "height": 0.3,
+      "abilities": [
+        "Vista Lince",
+        "Tumbos"
+      ],
+      "description": "Muy común en bosques y selvas. Aletea al nivel del suelo para levantar la gravilla."
+    },
+    {
+      "id": 17,
+      "name": "Pidgeotto",
+      "type": [
+        "Normal",
+        "Volador"
+      ],
+      "weight": 30,
+      "height": 1.1,
+      "abilities": [
+        "Vista Lince",
+        "Tumbos"
+      ],
+      "description": "Tiene garras desarrolladas. Puede transportar presas como Exeggcute a su nido desde casi 100 km."
+    },
+    {
+      "id": 18,
+      "name": "Pidgeot",
+      "type": [
+        "Normal",
+        "Volador"
+      ],
+      "weight": 39.5,
+      "height": 1.5,
+      "abilities": [
+        "Vista Lince",
+        "Tumbos"
+      ],
+      "description": "Puede volar a una velocidad de Mach 2. Sus plumas brillantes intimidan a sus rivales."
+    },
+    {
+      "id": 19,
+      "name": "Rattata",
+      "type": [
+        "Normal"
+      ],
+      "weight": 3.5,
+      "height": 0.3,
+      "abilities": [
+        "Fuga",
+        "Agallas"
+      ],
+      "description": "Sus colmillos crecen continuamente. Roe objetos duros para limarlos."
+    },
+    {
+      "id": 20,
+      "name": "Raticate",
+      "type": [
+        "Normal"
+      ],
+      "weight": 18.5,
+      "height": 0.7,
+      "abilities": [
+        "Fuga",
+        "Agallas"
+      ],
+      "description": "Gracias a sus patas palmeadas, nada con soltura en ríos y pantanos en busca de presas."
+    },
+    {
+      "id": 21,
+      "name": "Spearow",
+      "type": [
+        "Normal",
+        "Volador"
+      ],
+      "weight": 2,
+      "height": 0.3,
+      "abilities": [
+        "Vista Lince",
+        "Francotirador"
+      ],
+      "description": "A pesar de sus cortas alas, vuela con gran destreza. Es muy territorial y agresivo."
+    },
+    {
+      "id": 22,
+      "name": "Fearow",
+      "type": [
+        "Normal",
+        "Volador"
+      ],
+      "weight": 38,
+      "height": 1.2,
+      "abilities": [
+        "Vista Lince",
+        "Francotirador"
+      ],
+      "description": "Con su largo y delgado pico atrapa presas en tierra y agua. Sus alas le permiten volar todo el día."
+    },
+    {
+      "id": 23,
+      "name": "Ekans",
+      "type": [
+        "Veneno"
+      ],
+      "weight": 6.9,
+      "height": 2,
+      "abilities": [
+        "Mudar",
+        "Intimidación"
+      ],
+      "description": "Mientras más viejo se hace, más crece. Por la noche se enrosca alrededor de ramas para dormir."
+    },
+    {
+      "id": 24,
+      "name": "Arbok",
+      "type": [
+        "Veneno"
+      ],
+      "weight": 65,
+      "height": 3.5,
+      "abilities": [
+        "Mudar",
+        "Intimidación"
+      ],
+      "description": "Los dibujos aterradores de su pecho sirven para intimidar a sus enemigos."
+    },
+    {
+      "id": 25,
+      "name": "Pikachu",
+      "type": [
+        "Eléctrico"
+      ],
+      "weight": 6,
+      "height": 0.4,
+      "abilities": [
+        "Electricidad Estática",
+        "Pararrayos"
+      ],
+      "description": "Cuando se enfada, libera la energía almacenada en las bolsas de sus mejillas."
+    },
+    {
+      "id": 26,
+      "name": "Raichu",
+      "type": [
+        "Eléctrico"
+      ],
+      "weight": 30,
+      "height": 0.8,
+      "abilities": [
+        "Electricidad Estática",
+        "Pararrayos"
+      ],
+      "description": "Su larga cola actúa como toma de tierra para protegerse de su propia potencia eléctrica."
+    },
+    {
+      "id": 27,
+      "name": "Sandshrew",
+      "type": [
+        "Tierra"
+      ],
+      "weight": 12,
+      "height": 0.6,
+      "abilities": [
+        "Velo Arena",
+        "Ímpetu Arena"
+      ],
+      "description": "Le gusta revolcarse en la arena seca. Se hace una bola para protegerse de los ataques."
+    },
+    {
+      "id": 28,
+      "name": "Sandslash",
+      "type": [
+        "Tierra"
+      ],
+      "weight": 29.5,
+      "height": 1,
+      "abilities": [
+        "Velo Arena",
+        "Ímpetu Arena"
+      ],
+      "description": "Sus púas endurecidas pueden atravesar incluso el acero. Es experto en el ataque rodante."
+    },
+    {
+      "id": 29,
+      "name": "Nidoran♀",
+      "type": [
+        "Veneno"
+      ],
+      "weight": 7,
+      "height": 0.4,
+      "abilities": [
+        "Punto Tóxico",
+        "Rivalidad"
+      ],
+      "description": "Aunque pequeña, su venenoso aguijón es muy peligroso. La hembra tiene cuernos más pequeños."
+    },
+    {
+      "id": 30,
+      "name": "Nidorina",
+      "type": [
+        "Veneno"
+      ],
+      "weight": 20,
+      "height": 0.8,
+      "abilities": [
+        "Punto Tóxico",
+        "Rivalidad"
+      ],
+      "description": "El cuerno de la hembra se desarrolla lentamente. Prefiere ataques físicos como arañar y morder."
+    },
+    {
+      "id": 31,
+      "name": "Nidoqueen",
+      "type": [
+        "Veneno",
+        "Tierra"
+      ],
+      "weight": 60,
+      "height": 1.3,
+      "abilities": [
+        "Punto Tóxico",
+        "Rivalidad"
+      ],
+      "description": "Su cuerpo está cubierto de escamas duras como la roca. Impone respeto con su fuerza bruta."
+    },
+    {
+      "id": 32,
+      "name": "Nidoran♂",
+      "type": [
+        "Veneno"
+      ],
+      "weight": 9,
+      "height": 0.5,
+      "abilities": [
+        "Punto Tóxico",
+        "Rivalidad"
+      ],
+      "description": "Mantiene sus grandes orejas levantadas para vigilar. Si detecta peligro, ataca con su cuerno tóxico."
+    },
+    {
+      "id": 33,
+      "name": "Nidorino",
+      "type": [
+        "Veneno"
+      ],
+      "weight": 19.5,
+      "height": 0.9,
+      "abilities": [
+        "Punto Tóxico",
+        "Rivalidad"
+      ],
+      "description": "Es agresivo por naturaleza y siempre está listo para pelear. Su cuerno es muy venenoso."
+    },
+    {
+      "id": 34,
+      "name": "Nidoking",
+      "type": [
+        "Veneno",
+        "Tierra"
+      ],
+      "weight": 62,
+      "height": 1.4,
+      "abilities": [
+        "Punto Tóxico",
+        "Rivalidad"
+      ],
+      "description": "Su cola es poderosa como para derribar una torre de transmisión. Su cuerno perfora incluso diamantes."
+    },
+    {
+      "id": 35,
+      "name": "Clefairy",
+      "type": [
+        "Hada"
+      ],
+      "weight": 7.5,
+      "height": 0.6,
+      "abilities": [
+        "Gran Encanto",
+        "Muro Mágico"
+      ],
+      "description": "Se dice que vino del espacio. Baila bajo la luna llena y sus pasos producen un extraño ritual."
+    },
+    {
+      "id": 36,
+      "name": "Clefable",
+      "type": [
+        "Hada"
+      ],
+      "weight": 40,
+      "height": 1.3,
+      "abilities": [
+        "Gran Encanto",
+        "Muro Mágico"
+      ],
+      "description": "Es muy tímido y raramente se deja ver por los humanos. Usa sus alas para rebotar suavemente."
+    },
+    {
+      "id": 37,
+      "name": "Vulpix",
+      "type": [
+        "Fuego"
+      ],
+      "weight": 9.9,
+      "height": 0.6,
+      "abilities": [
+        "Mar Llamas",
+        "Sequía"
+      ],
+      "description": "De pequeño, tiene seis colas de gran belleza. Al evolucionar, le crecen más colas."
+    },
+    {
+      "name": "MewTwo",
+      "type": [
+        "Psíquico"
+      ],
+      "weight": 122,
+      "height": 2,
+      "abilities": [
+        "Presión"
+      ],
+      "description": "Un Pokémon creado por manipulación genética.",
+      "id": 38
+    }
+  ]
+}

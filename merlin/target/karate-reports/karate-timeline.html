@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"pokemon\/pokemon[1:6]","start":1735437314666,"end":1735437316231,"title":"pokemon\/pokemon[1:6] 20:55:14.666-20:55:16.231 Obtener todos los Pokémon"},{"id":2,"group":1,"content":"pokemon\/pokemon[2:13]","start":1735437316350,"end":1735437316474,"title":"pokemon\/pokemon[2:13] 20:55:16.350-20:55:16.474 Obtener un Pokémon específico"},{"id":3,"group":1,"content":"pokemon\/pokemon[3:19]","start":1735437316514,"end":1735437316967,"title":"pokemon\/pokemon[3:19] 20:55:16.514-20:55:16.967 Obtener Pokémon por tipo"},{"id":4,"group":1,"content":"pokemon\/pokemon[4:26]","start":1735437317009,"end":1735437317194,"title":"pokemon\/pokemon[4:26] 20:55:17.009-20:55:17.194 Crear un nuevo Pokémon"},{"id":5,"group":1,"content":"pokemon\/pokemon[5:33]","start":1735437317224,"end":1735437317299,"title":"pokemon\/pokemon[5:33] 20:55:17.224-20:55:17.299 Actualizar un Pokémon existente"},{"id":6,"group":1,"content":"pokemon\/pokemon[6:40]","start":1735437317334,"end":1735437317378,"title":"pokemon\/pokemon[6:40] 20:55:17.334-20:55:17.378 Eliminar un Pokémon"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

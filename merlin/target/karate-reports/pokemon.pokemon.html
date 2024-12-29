@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"16d9fe1e-467d-495a-b795-4ce47989058d",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>pokemon.pokemon</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-12-28 08:55:17 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Obtener todos los Pokémon</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:13]"><span>[2:13]</span> <span>Obtener un Pokémon específico</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:19]"><span>[3:19]</span> <span>Obtener Pokémon por tipo</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:26]"><span>[4:26]</span> <span>Crear un nuevo Pokémon</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:33]"><span>[5:33]</span> <span>Actualizar un Pokémon existente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:40]"><span>[6:40]</span> <span>Eliminar un Pokémon</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">pokemon/pokemon.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Pruebas de API de Pokémon</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Obtener todos los Pokémon</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1524</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">213</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pokemon&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1062</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">20:55:15.751 request:
+1 &gt; GET http://localhost:3000/api/pokemon
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:55:15.885 response time in milliseconds: 116
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 8098
+1 &lt; ETag: W/&quot;1fa2-0WXBEHTND8vsfWNxr9gvCpx5fYQ&quot;
+1 &lt; Date: Sun, 29 Dec 2024 01:55:15 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+[{&quot;id&quot;:1,&quot;name&quot;:&quot;Bulbasaur&quot;,&quot;type&quot;:[&quot;Planta&quot;,&quot;Veneno&quot;],&quot;weight&quot;:6.9,&quot;height&quot;:0.7,&quot;abilities&quot;:[&quot;Espesura&quot;,&quot;Clorofila&quot;],&quot;description&quot;:&quot;Un Pokémon con una semilla en su lomo que crece junto con él desde su nacimiento.&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Ivysaur&quot;,&quot;type&quot;:[&quot;Planta&quot;,&quot;Veneno&quot;],&quot;weight&quot;:13,&quot;height&quot;:1,&quot;abilities&quot;:[&quot;Espesura&quot;,&quot;Clorofila&quot;],&quot;description&quot;:&quot;El bulbo en su espalda crece absorbiendo nutrientes. Emite un dulce aroma cuando está a punto de florecer.&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Venusaur&quot;,&quot;type&quot;:[&quot;Planta&quot;,&quot;Veneno&quot;],&quot;weight&quot;:100,&quot;height&quot;:2,&quot;abilities&quot;:[&quot;Espesura&quot;,&quot;Clorofila&quot;],&quot;description&quot;:&quot;Su flor emite un aroma relajante que calma los ánimos de combate.&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Charmander&quot;,&quot;type&quot;:[&quot;Fuego&quot;],&quot;weight&quot;:8.5,&quot;height&quot;:0.6,&quot;abilities&quot;:[&quot;Mar Llamas&quot;,&quot;Poder Solar&quot;],&quot;description&quot;:&quot;La llama en la punta de su cola indica su estado emocional y vital.&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Charmeleon&quot;,&quot;type&quot;:[&quot;Fuego&quot;],&quot;weight&quot;:19,&quot;height&quot;:1.1,&quot;abilities&quot;:[&quot;Mar Llamas&quot;,&quot;Poder Solar&quot;],&quot;description&quot;:&quot;Cuando balancea su ardiente cola, eleva la temperatura a niveles increíbles.&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Charizard&quot;,&quot;type&quot;:[&quot;Fuego&quot;,&quot;Volador&quot;],&quot;weight&quot;:90.5,&quot;height&quot;:1.7,&quot;abilities&quot;:[&quot;Mar Llamas&quot;,&quot;Poder Solar&quot;],&quot;description&quot;:&quot;Escupe fuego tan caliente que funde las rocas. Causa incendios forestales sin querer.&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;Squirtle&quot;,&quot;type&quot;:[&quot;Agua&quot;],&quot;weight&quot;:9,&quot;height&quot;:0.5,&quot;abilities&quot;:[&quot;Torrente&quot;,&quot;Caparazón&quot;],&quot;description&quot;:&quot;Cuando retrae su largo cuello en el caparazón, dispara agua con vigor.&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;Wartortle&quot;,&quot;type&quot;:[&quot;Agua&quot;],&quot;weight&quot;:22.5,&quot;height&quot;:1,&quot;abilities&quot;:[&quot;Torrente&quot;,&quot;Caparazón&quot;],&quot;description&quot;:&quot;Su cola peluda y larga es símbolo de longevidad. Se lo considera un Pokémon de buena suerte.&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;Blastoise&quot;,&quot;type&quot;:[&quot;Agua&quot;],&quot;weight&quot;:85.5,&quot;height&quot;:1.6,&quot;abilities&quot;:[&quot;Torrente&quot;,&quot;Caparazón&quot;],&quot;description&quot;:&quot;Los chorros de agua que dispara por los cañones de su caparazón pueden atravesar el acero.&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;Caterpie&quot;,&quot;type&quot;:[&quot;Bicho&quot;],&quot;weight&quot;:2.9,&quot;height&quot;:0.3,&quot;abilities&quot;:[&quot;Polvo Escudo&quot;,&quot;Fuga&quot;],&quot;description&quot;:&quot;Sus patas tienen ventosas que le permiten trepar incansablemente por muros y pendientes.&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;Metapod&quot;,&quot;type&quot;:[&quot;Bicho&quot;],&quot;weight&quot;:9.9,&quot;height&quot;:0.7,&quot;abilities&quot;:[&quot;Mudar&quot;,&quot;Caparazón&quot;],&quot;description&quot;:&quot;Ha encubierto su cuerpo con un duro caparazón. Permanece inmóvil mientras se prepara para evolucionar.&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;Butterfree&quot;,&quot;type&quot;:[&quot;Bicho&quot;,&quot;Volador&quot;],&quot;weight&quot;:32,&quot;height&quot;:1.1,&quot;abilities&quot;:[&quot;Ojo Compuesto&quot;,&quot;Recolector&quot;],&quot;description&quot;:&quot;En batalla, aletea a gran velocidad para lanzar al aire sus escamas tóxicas.&quot;},{&quot;id&quot;:13,&quot;name&quot;:&quot;Weedle&quot;,&quot;type&quot;:[&quot;Bicho&quot;,&quot;Veneno&quot;],&quot;weight&quot;:3.2,&quot;height&quot;:0.3,&quot;abilities&quot;:[&quot;Polvo Escudo&quot;,&quot;Fuga&quot;],&quot;description&quot;:&quot;El aguijón de su cabeza es muy venenoso. Su cuerpo está cubierto de pelos cortos y afilados.&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;Kakuna&quot;,&quot;type&quot;:[&quot;Bicho&quot;,&quot;Veneno&quot;],&quot;weight&quot;:10,&quot;height&quot;:0.6,&quot;abilities&quot;:[&quot;Mudar&quot;,&quot;Caparazón&quot;],&quot;description&quot;:&quot;Casi incapaz de moverse, este Pokémon solo puede endurecer su caparazón para protegerse.&quot;},{&quot;id&quot;:15,&quot;name&quot;:&quot;Beedrill&quot;,&quot;type&quot;:[&quot;Bicho&quot;,&quot;Veneno&quot;],&quot;weight&quot;:29.5,&quot;height&quot;:1,&quot;abilities&quot;:[&quot;Enjambre&quot;,&quot;Francotirador&quot;],&quot;description&quot;:&quot;Vuela a gran velocidad y ataca usando los venenosos aguijones de sus patas y cola.&quot;},{&quot;id&quot;:16,&quot;name&quot;:&quot;Pidgey&quot;,&quot;type&quot;:[&quot;Normal&quot;,&quot;Volador&quot;],&quot;weight&quot;:1.8,&quot;height&quot;:0.3,&quot;abilities&quot;:[&quot;Vista Lince&quot;,&quot;Tumbos&quot;],&quot;description&quot;:&quot;Muy común en bosques y selvas. Aletea al nivel del suelo para levantar la gravilla.&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;Pidgeotto&quot;,&quot;type&quot;:[&quot;Normal&quot;,&quot;Volador&quot;],&quot;weight&quot;:30,&quot;height&quot;:1.1,&quot;abilities&quot;:[&quot;Vista Lince&quot;,&quot;Tumbos&quot;],&quot;description&quot;:&quot;Tiene garras desarrolladas. Puede transportar presas como Exeggcute a su nido desde casi 100 km.&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;Pidgeot&quot;,&quot;type&quot;:[&quot;Normal&quot;,&quot;Volador&quot;],&quot;weight&quot;:39.5,&quot;height&quot;:1.5,&quot;abilities&quot;:[&quot;Vista Lince&quot;,&quot;Tumbos&quot;],&quot;description&quot;:&quot;Puede volar a una velocidad de Mach 2. Sus plumas brillantes intimidan a sus rivales.&quot;},{&quot;id&quot;:19,&quot;name&quot;:&quot;Rattata&quot;,&quot;type&quot;:[&quot;Normal&quot;],&quot;weight&quot;:3.5,&quot;height&quot;:0.3,&quot;abilities&quot;:[&quot;Fuga&quot;,&quot;Agallas&quot;],&quot;description&quot;:&quot;Sus colmillos crecen continuamente. Roe objetos duros para limarlos.&quot;},{&quot;id&quot;:20,&quot;name&quot;:&quot;Raticate&quot;,&quot;type&quot;:[&quot;Normal&quot;],&quot;weight&quot;:18.5,&quot;height&quot;:0.7,&quot;abilities&quot;:[&quot;Fuga&quot;,&quot;Agallas&quot;],&quot;description&quot;:&quot;Gracias a sus patas palmeadas, nada con soltura en ríos y pantanos en busca de presas.&quot;},{&quot;id&quot;:21,&quot;name&quot;:&quot;Spearow&quot;,&quot;type&quot;:[&quot;Normal&quot;,&quot;Volador&quot;],&quot;weight&quot;:2,&quot;height&quot;:0.3,&quot;abilities&quot;:[&quot;Vista Lince&quot;,&quot;Francotirador&quot;],&quot;description&quot;:&quot;A pesar de sus cortas alas, vuela con gran destreza. Es muy territorial y agresivo.&quot;},{&quot;id&quot;:22,&quot;name&quot;:&quot;Fearow&quot;,&quot;type&quot;:[&quot;Normal&quot;,&quot;Volador&quot;],&quot;weight&quot;:38,&quot;height&quot;:1.2,&quot;abilities&quot;:[&quot;Vista Lince&quot;,&quot;Francotirador&quot;],&quot;description&quot;:&quot;Con su largo y delgado pico atrapa presas en tierra y agua. Sus alas le permiten volar todo el día.&quot;},{&quot;id&quot;:23,&quot;name&quot;:&quot;Ekans&quot;,&quot;type&quot;:[&quot;Veneno&quot;],&quot;weight&quot;:6.9,&quot;height&quot;:2,&quot;abilities&quot;:[&quot;Mudar&quot;,&quot;Intimidación&quot;],&quot;description&quot;:&quot;Mientras más viejo se hace, más crece. Por la noche se enrosca alrededor de ramas para dormir.&quot;},{&quot;id&quot;:24,&quot;name&quot;:&quot;Arbok&quot;,&quot;type&quot;:[&quot;Veneno&quot;],&quot;weight&quot;:65,&quot;height&quot;:3.5,&quot;abilities&quot;:[&quot;Mudar&quot;,&quot;Intimidación&quot;],&quot;description&quot;:&quot;Los dibujos aterradores de su pecho sirven para intimidar a sus enemigos.&quot;},{&quot;id&quot;:25,&quot;name&quot;:&quot;Pikachu&quot;,&quot;type&quot;:[&quot;Eléctrico&quot;],&quot;weight&quot;:6,&quot;height&quot;:0.4,&quot;abilities&quot;:[&quot;Electricidad Estática&quot;,&quot;Pararrayos&quot;],&quot;description&quot;:&quot;Cuando se enfada, libera la energía almacenada en las bolsas de sus mejillas.&quot;},{&quot;id&quot;:26,&quot;name&quot;:&quot;Raichu&quot;,&quot;type&quot;:[&quot;Eléctrico&quot;],&quot;weight&quot;:30,&quot;height&quot;:0.8,&quot;abilities&quot;:[&quot;Electricidad Estática&quot;,&quot;Pararrayos&quot;],&quot;description&quot;:&quot;Su larga cola actúa como toma de tierra para protegerse de su propia potencia eléctrica.&quot;},{&quot;id&quot;:27,&quot;name&quot;:&quot;Sandshrew&quot;,&quot;type&quot;:[&quot;Tierra&quot;],&quot;weight&quot;:12,&quot;height&quot;:0.6,&quot;abilities&quot;:[&quot;Velo Arena&quot;,&quot;Ímpetu Arena&quot;],&quot;description&quot;:&quot;Le gusta revolcarse en la arena seca. Se hace una bola para protegerse de los ataques.&quot;},{&quot;id&quot;:28,&quot;name&quot;:&quot;Sandslash&quot;,&quot;type&quot;:[&quot;Tierra&quot;],&quot;weight&quot;:29.5,&quot;height&quot;:1,&quot;abilities&quot;:[&quot;Velo Arena&quot;,&quot;Ímpetu Arena&quot;],&quot;description&quot;:&quot;Sus púas endurecidas pueden atravesar incluso el acero. Es experto en el ataque rodante.&quot;},{&quot;id&quot;:29,&quot;name&quot;:&quot;Nidoran♀&quot;,&quot;type&quot;:[&quot;Veneno&quot;],&quot;weight&quot;:7,&quot;height&quot;:0.4,&quot;abilities&quot;:[&quot;Punto Tóxico&quot;,&quot;Rivalidad&quot;],&quot;description&quot;:&quot;Aunque pequeña, su venenoso aguijón es muy peligroso. La hembra tiene cuernos más pequeños.&quot;},{&quot;id&quot;:30,&quot;name&quot;:&quot;Nidorina&quot;,&quot;type&quot;:[&quot;Veneno&quot;],&quot;weight&quot;:20,&quot;height&quot;:0.8,&quot;abilities&quot;:[&quot;Punto Tóxico&quot;,&quot;Rivalidad&quot;],&quot;description&quot;:&quot;El cuerno de la hembra se desarrolla lentamente. Prefiere ataques físicos como arañar y morder.&quot;},{&quot;id&quot;:31,&quot;name&quot;:&quot;Nidoqueen&quot;,&quot;type&quot;:[&quot;Veneno&quot;,&quot;Tierra&quot;],&quot;weight&quot;:60,&quot;height&quot;:1.3,&quot;abilities&quot;:[&quot;Punto Tóxico&quot;,&quot;Rivalidad&quot;],&quot;description&quot;:&quot;Su cuerpo está cubierto de escamas duras como la roca. Impone respeto con su fuerza bruta.&quot;},{&quot;id&quot;:32,&quot;name&quot;:&quot;Nidoran♂&quot;,&quot;type&quot;:[&quot;Veneno&quot;],&quot;weight&quot;:9,&quot;height&quot;:0.5,&quot;abilities&quot;:[&quot;Punto Tóxico&quot;,&quot;Rivalidad&quot;],&quot;description&quot;:&quot;Mantiene sus grandes orejas levantadas para vigilar. Si detecta peligro, ataca con su cuerno tóxico.&quot;},{&quot;id&quot;:33,&quot;name&quot;:&quot;Nidorino&quot;,&quot;type&quot;:[&quot;Veneno&quot;],&quot;weight&quot;:19.5,&quot;height&quot;:0.9,&quot;abilities&quot;:[&quot;Punto Tóxico&quot;,&quot;Rivalidad&quot;],&quot;description&quot;:&quot;Es agresivo por naturaleza y siempre está listo para pelear. Su cuerno es muy venenoso.&quot;},{&quot;id&quot;:34,&quot;name&quot;:&quot;Nidoking&quot;,&quot;type&quot;:[&quot;Veneno&quot;,&quot;Tierra&quot;],&quot;weight&quot;:62,&quot;height&quot;:1.4,&quot;abilities&quot;:[&quot;Punto Tóxico&quot;,&quot;Rivalidad&quot;],&quot;description&quot;:&quot;Su cola es poderosa como para derribar una torre de transmisión. Su cuerno perfora incluso diamantes.&quot;},{&quot;id&quot;:35,&quot;name&quot;:&quot;Clefairy&quot;,&quot;type&quot;:[&quot;Hada&quot;],&quot;weight&quot;:7.5,&quot;height&quot;:0.6,&quot;abilities&quot;:[&quot;Gran Encanto&quot;,&quot;Muro Mágico&quot;],&quot;description&quot;:&quot;Se dice que vino del espacio. Baila bajo la luna llena y sus pasos producen un extraño ritual.&quot;},{&quot;id&quot;:36,&quot;name&quot;:&quot;Clefable&quot;,&quot;type&quot;:[&quot;Hada&quot;],&quot;weight&quot;:40,&quot;height&quot;:1.3,&quot;abilities&quot;:[&quot;Gran Encanto&quot;,&quot;Muro Mágico&quot;],&quot;description&quot;:&quot;Es muy tímido y raramente se deja ver por los humanos. Usa sus alas para rebotar suavemente.&quot;},{&quot;id&quot;:37,&quot;name&quot;:&quot;Vulpix&quot;,&quot;type&quot;:[&quot;Fuego&quot;],&quot;weight&quot;:9.9,&quot;height&quot;:0.6,&quot;abilities&quot;:[&quot;Mar Llamas&quot;,&quot;Sequía&quot;],&quot;description&quot;:&quot;De pequeño, tiene seis colas de gran belleza. Al evolucionar, le crecen más colas.&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == &#39;#[37]&#39; // Verifica que hay 37 Pokémon</span>
+      </div>
+    </div>
+    <div class="time-cell passed">144</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response contains { id: &#39;#number&#39;, name: &#39;#string&#39;, type: &#39;#array&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">103</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:13]</span>
+                <span class="scenario-name">Obtener un Pokémon específico</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>123</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pokemon/25&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">105</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">20:55:16.416 request:
+1 &gt; GET http://localhost:3000/api/pokemon/25
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:55:16.467 response time in milliseconds: 49
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 219
+1 &lt; ETag: W/&quot;db-oGYATpanN7aDHEQTTiw1vibZYCA&quot;
+1 &lt; Date: Sun, 29 Dec 2024 01:55:16 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;id&quot;:25,&quot;name&quot;:&quot;Pikachu&quot;,&quot;type&quot;:[&quot;Eléctrico&quot;],&quot;weight&quot;:6,&quot;height&quot;:0.4,&quot;abilities&quot;:[&quot;Electricidad Estática&quot;,&quot;Pararrayos&quot;],&quot;description&quot;:&quot;Cuando se enfada, libera la energía almacenada en las bolsas de sus mejillas.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { id: 25, name: &#39;Pikachu&#39;, type: [&#39;Eléctrico&#39;] }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:19]</span>
+                <span class="scenario-name">Obtener Pokémon por tipo</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>452</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pokemon/tipo/Agua&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">31</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">20:55:16.520 request:
+1 &gt; GET http://localhost:3000/api/pokemon/tipo/Agua
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:55:16.540 response time in milliseconds: 16
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 630
+1 &lt; ETag: W/&quot;276-pBhCrL0P+E+/W+wss0G/88+XHjc&quot;
+1 &lt; Date: Sun, 29 Dec 2024 01:55:16 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+[{&quot;id&quot;:7,&quot;name&quot;:&quot;Squirtle&quot;,&quot;type&quot;:[&quot;Agua&quot;],&quot;weight&quot;:9,&quot;height&quot;:0.5,&quot;abilities&quot;:[&quot;Torrente&quot;,&quot;Caparazón&quot;],&quot;description&quot;:&quot;Cuando retrae su largo cuello en el caparazón, dispara agua con vigor.&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;Wartortle&quot;,&quot;type&quot;:[&quot;Agua&quot;],&quot;weight&quot;:22.5,&quot;height&quot;:1,&quot;abilities&quot;:[&quot;Torrente&quot;,&quot;Caparazón&quot;],&quot;description&quot;:&quot;Su cola peluda y larga es símbolo de longevidad. Se lo considera un Pokémon de buena suerte.&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;Blastoise&quot;,&quot;type&quot;:[&quot;Agua&quot;],&quot;weight&quot;:85.5,&quot;height&quot;:1.6,&quot;abilities&quot;:[&quot;Torrente&quot;,&quot;Caparazón&quot;],&quot;description&quot;:&quot;Los chorros de agua que dispara por los cañones de su caparazón pueden atravesar el acero.&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">419</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">20:55:16.961 [print] [
+  {
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;Squirtle&quot;,
+    &quot;type&quot;: [
+      &quot;Agua&quot;
+    ],
+    &quot;weight&quot;: 9,
+    &quot;height&quot;: 0.5,
+    &quot;abilities&quot;: [
+      &quot;Torrente&quot;,
+      &quot;Caparazón&quot;
+    ],
+    &quot;description&quot;: &quot;Cuando retrae su largo cuello en el caparazón, dispara agua con vigor.&quot;
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;Wartortle&quot;,
+    &quot;type&quot;: [
+      &quot;Agua&quot;
+    ],
+    &quot;weight&quot;: 22.5,
+    &quot;height&quot;: 1,
+    &quot;abilities&quot;: [
+      &quot;Torrente&quot;,
+      &quot;Caparazón&quot;
+    ],
+    &quot;description&quot;: &quot;Su cola peluda y larga es símbolo de longevidad. Se lo considera un Pokémon de buena suerte.&quot;
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;Blastoise&quot;,
+    &quot;type&quot;: [
+      &quot;Agua&quot;
+    ],
+    &quot;weight&quot;: 85.5,
+    &quot;height&quot;: 1.6,
+    &quot;abilities&quot;: [
+      &quot;Torrente&quot;,
+      &quot;Caparazón&quot;
+    ],
+    &quot;description&quot;: &quot;Los chorros de agua que dispara por los cañones de su caparazón pueden atravesar el acero.&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:26]</span>
+                <span class="scenario-name">Crear un nuevo Pokémon</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>184</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:26]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pokemon&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { name: &#39;MewTwo&#39;, type: [&#39;Psíquico&#39;], weight: 122.0, height: 2.0, abilities: [&#39;Presión&#39;], description: &#39;Un Pokémon creado por manipulación genética.&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">178</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">20:55:17.162 request:
+1 &gt; POST http://localhost:3000/api/pokemon
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 155
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;MewTwo&quot;,&quot;type&quot;:[&quot;Psíquico&quot;],&quot;weight&quot;:122.0,&quot;height&quot;:2.0,&quot;abilities&quot;:[&quot;Presión&quot;],&quot;description&quot;:&quot;Un Pokémon creado por manipulación genética.&quot;}
+
+20:55:17.185 response time in milliseconds: 22
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 159
+1 &lt; ETag: W/&quot;9f-XqrcjF44KHzwLIjHesWbJeNpfis&quot;
+1 &lt; Date: Sun, 29 Dec 2024 01:55:17 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;name&quot;:&quot;MewTwo&quot;,&quot;type&quot;:[&quot;Psíquico&quot;],&quot;weight&quot;:122,&quot;height&quot;:2,&quot;abilities&quot;:[&quot;Presión&quot;],&quot;description&quot;:&quot;Un Pokémon creado por manipulación genética.&quot;,&quot;id&quot;:38}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { name: &#39;MewTwo&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:33]</span>
+                <span class="scenario-name">Actualizar un Pokémon existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>74</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pokemon/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { weight: 7.0 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">57</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">20:55:17.236 request:
+1 &gt; PUT http://localhost:3000/api/pokemon/1
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 14
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;weight&quot;:7.0}
+
+20:55:17.284 response time in milliseconds: 46
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 215
+1 &lt; ETag: W/&quot;d7-JLs5BVpgW4mwMVyFQ0SD8Wc+Kfs&quot;
+1 &lt; Date: Sun, 29 Dec 2024 01:55:17 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;id&quot;:1,&quot;name&quot;:&quot;Bulbasaur&quot;,&quot;type&quot;:[&quot;Planta&quot;,&quot;Veneno&quot;],&quot;weight&quot;:7,&quot;height&quot;:0.7,&quot;abilities&quot;:[&quot;Espesura&quot;,&quot;Clorofila&quot;],&quot;description&quot;:&quot;Un Pokémon con una semilla en su lomo que crece junto con él desde su nacimiento.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.weight == 7.0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:40]</span>
+                <span class="scenario-name">Eliminar un Pokémon</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>44</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;pokemon/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">43</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">20:55:17.344 request:
+1 &gt; DELETE http://localhost:3000/api/pokemon/1
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:55:17.367 response time in milliseconds: 22
+1 &lt; 204
+1 &lt; X-Powered-By: Express
+1 &lt; Date: Sun, 29 Dec 2024 01:55:17 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
